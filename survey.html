@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <title>DINK Finder (Dual Income, No Kids)</title>
+</head>
+
+<body>
+    <h2>DINK Finder!</h2>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <form>
+        <div class="form-group">
+            <label for="nameInput">Your First Name (required)</label>
+            <input type="name" class="form-control" id="nameInput1" placeholder="(e.g., Leon)">
+        </div>
+        <div class="form-group">
+            <label for="picLink">Link to Your Photo (required)</label>
+            <input type="html-link" class="form-control" id="nameInput1" placeholder="(e.g., http://People Magazine's Hottest Man Alive)">
+        </div>
+               <!-- on a scale of 1-5, how much do you agree with these statements? -->
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">I see myself being a parent.</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">I see myself as a traveler.</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">I see myself as a homebody.</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">I see myself as a night owl.</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">I see myself as even-tempered.</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">I see myself as ambitious.</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">I see myself as a beach person.</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">I see myself as a reader.</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">I see myself as humorous.</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">I see myself owning pets.</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+    </form>
+     <!-- Materialize Modal Trigger/Submit Button -->
+     <button type ="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger cyan lighten-1" id="submitBtn">Submit</button>
+    </div>
+</div>
+<div class='col s4'>
+    <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/kendraweinisch/FriendFinder.git' target='_blank'>GitHub Repo</a></p>
+</div>
+
+<!-- Materialize Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Meet Your New BFF</h4>
+    <h5 id="matchName"></h5>
+    <img id="matchPic" src="" alt="No Image" width = 250px>
+  </div>
+<div class="modal-footer">
+  <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+</div>
+</div>
+
+</div>
+
+<!-- Grabs information and sends it to server -->
+<script type="text/javascript">
+$(document).ready(function() {
+$("#submitBtn").on("click", function() {
+//form validation
+function validateForm() {
+    var isValid = true;
+    $('.validate').each(function() {
+        if ($(this).val() === ''){
+            isValid = false;
+        }
+    });
+    $('.browser-default').each(function() {
+        if ($(this).val() === ""){
+            isValid = false;
+        }
+    });
+    return isValid;
+}
+//if everything is filled
+if (validateForm() == true) {
+    //creates a new friend from the values submitted
+    var newFriend = {
+        name: $('#name').val().trim(),
+        profilePic: $('#photo').val().trim(),
+        scores: [
+            $('#q1').val(),
+            $('#q2').val(),
+            $('#q3').val(),
+            $('#q4').val(),
+            $('#q5').val(),
+            $('#q6').val(),
+            $('#q7').val(),
+            $('#q8').val(),
+            $('#q9').val(),
+            $('#q10').val(),
+        ]
+    };
+    //Grabs current URL of website
+    var currentURL = window.location.origin;
+    //AJAX posts the data to friends API.
+    $.post(currentURL + "/api/friends", newFriend, function(data) {
+        //Grab the result from the AJAX post so that the best match's name and photo are displayed.
+        $("#matchName").text(data.name);
+        $("#matchPic").attr("src", data.profilePic);
+    });
+    // Show the modal with the best match
+        $('.modal').modal();
+    //clear form after submission
+    $('#name').val("");
+    $('#photo').val("");
+    $('#q1').val("");
+    $('#q2').val("");
+    $('#q3').val("");
+    $('#q4').val("");
+    $('#q5').val("");
+    $('#q6').val("");
+    $('#q7').val("");
+    $('#q8').val("");
+    $('#q9').val("");
+    $('#q10').val("");
+} else {
+    alert("Please fill out ALL fields before submitting survey!")
+}
+// return false;
+});
+});
+</script>
+</body>
+
